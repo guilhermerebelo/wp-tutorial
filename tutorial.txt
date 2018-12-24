@@ -1,0 +1,100 @@
+root usuario
+root senha
+
+versão do wordpress
+
+-> SESSÃO 1
+
+INSTALAR WORDPRESS
+ 
+	1º Baixar o worldpress, e colocar em uma pasta do wamp;
+	2° Criar um banco de dados pra esse cara;
+	3º Alterar o prefixo por segurança (por padrão vem 'wp_')
+	
+	obs: bem facil, apenas seguir
+	
+
+-> SESSÃO 2
+
+	dentro da pasta Themes se encontra os temas, necessita apenas dos arquivos indes.php e style.css,
+	criar esses caras, e ativa ele no admin do wordpress
+	
+	separar o arquivo em 
+	<?php get_header(); ?>
+	<?php get_footer(); ?>
+	
+	functions.php -> serve para todas as funções php da pagina, inclusive importar css
+	
+	Dentro de funcions ele importa os css's e os js, após isso cria um menu;
+	declara 
+	<?php wp_head()?>
+	<?php wp_footer(); ?>
+	
+	
+-> SESSÃO 3
+
+	-> primeira aula ensina como organizar os posts dentro da página, e uma configuração tambem;
+	
+	-> ensinou como fazer a paginação, ele cria um arquivo 'menu-nomepagina' e e insere o html,
+     	a hora que clicar no menu ele vai alterar a pagina, tem o segundo modelo que é por comentario;
+	-> theme_support, tem as funções para adicionar, suporte a alterar de cor do background, colocar banner, imagens de post,
+	é possivel tambem criar varios tipos de post, editando ele com o "get_template_part('content, get_post_format())" 
+	e extrair o modelo de post para paginas tipo content-video, content-image.. aula 23
+	
+	-> SIDEBAR são widget's e aside, aula 24 mostra como registrar esse cara, registra em funcitons ele fica dispinivel no admin
+	se for um blog, vale a pena estudar esses caras, aula 24 e 25.
+	
+	-> WP_QUERY: esse cara é um objetico que é possivel ordenar as consultas sql pelo wp, por padrão ele traz a pesquisa
+	por data, é possivel ordenar por categoria (aulas 26 e 27), wp_query traz um cara só, caso queira trazer varios caras
+	ultiiza array(metodos aqui dentro que filtra esa procura)
+	AULA 28 cria uma busca mais massa com o wq_query
+	
+	
+	
+-> SESSÃO 4
+
+	SINGLE.PHP -> adiconar links aos posts, quando clicar nele ele vai direcionar para essa pagina, aula 31 ensina a colocar
+	comentarios nas postagens da single
+	
+	PESQUISA aula 32 ensina a INCLUIR O PESQUISA, SEARCH (é possivel habilitar o html no "add_theme_support")
+	
+	AULA 33 PAGINAÇÃO
+	
+	AULA 34 PAGINAÇÃO (MASI ESPECIFICA)
+	
+	AULA 35 cria uma página para quando clicar em categori, ano, ele apareça apenas os posts filtrados por 
+	
+	ERRO 404, APENAS CRIAR UM CARA COM O NOME DE 404.PHP 
+	
+->>> daqui pra cima ja é possivel criar um tema do 0 <<<-
+
+	
+-> SESSÃO 5
+
+	aula 38 SEO - YOEST CEO (biblioteca ou plugin para gerenciamentoe de SEO)
+	
+	
+-> SESSÃO 6 - plugins
+
+	AULA 42, slider - responsive slider by motopress
+	AULA 43, plugin para colocar um sobre no site, suporta imagem tambem -> IMPORTANTEEEE
+	AULA 44, menu de mapa
+	AULA 45, menu responsivo
+	AULA 46, layout responsivo
+	AULA 47, tag meta "<meta name="viewport" content="width=device-width, initial-scale=1.0">"
+	AULA 48, redes sociais
+	
+	
+- SESSÃO 7 
+	AULA 50, SHORTCODES -> cria uma função no functions.php e consegue utiliar o shortcodes no admin do wp
+	AULA 51, THEMECUSTOMIZER 
+	
+	
+	
+	
+	
+	
+ESTRUTURA DO TEMA
+index.php -> inicio
+style.css -> estilo (comentarios levam informações sobre a página, incluindo versão)
+screeshot.png -> thumb no admin do wordpress (1200x900)
